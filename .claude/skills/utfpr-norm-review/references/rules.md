@@ -124,7 +124,7 @@ and again after the approval sheet goes in, because it shifts every later page.
 | FIG-01 | B | Every illustration and table has a source line right after it. Accepted file does | NBR14724 §5.8, §5.9; MAN p. 36; ACEITO | auto only for the author's own generated work |
 | FIG-02 | B | Caption above the illustration: type, number, dash, title; source right after it. Both accepted files and the template do this | NBR14724 §5.8; MODELO; ACEITO; ACEITO2 | auto |
 | FIG-03 | C | Own work states it, in one consistent form. The template and P2 use "Fonte: Autoria própria." Manual also asks for the year, and P2 passed without it | NBR14724 §5.8; MAN p. 36; MODELO; ACEITO2 | auto |
-| FIG-04 | C | Caption, source and notes follow the illustration's edges. NBR beats the manual's centered source | NBR14724 §5.8; MAN p. 36 | auto |
+| FIG-04 | C | Source line centered right below the illustration. Short captions centered too; long ones fill the width. Both accepted files, the template and the manual do this, so it overrides a strict reading of §5.8 | MAN p. 36; ACEITO; ACEITO2; MODELO; NBR14724 §5.8 | auto |
 | FIG-05 | C | Cited in the text and placed near the citation | NBR14724 §5.8, §5.9 | manual |
 | FIG-06 | C | Authors named in sources are in the reference list | MAN p. 36 | aluno |
 | FIG-07 | C | Tables follow IBGE: open sides, source line. Quadros are closed and qualitative | NBR14724 §5.9; MAN p. 39-40 | manual |

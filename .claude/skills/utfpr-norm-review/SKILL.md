@@ -71,7 +71,10 @@ inserting the approval sheet. A clean result on a draft does not carry over to t
 
 Read the rules in `rules.md` and inspect the rendered pages for the rest: cover and rosto against
 the manual's models, figure placement and legibility, table style, reference content, and the
-acknowledgments. Render pages to images when layout matters.
+acknowledgments. Render pages to images when layout matters, and look again after every fix:
+checks can all pass while a source line overlaps a table rule.
+Put the cover and rosto side by side with those of an accepted work. Differences in bold, layout
+and the license block show at a glance, and no script measures them.
 
 ### 4. Assign tiers
 

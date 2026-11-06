@@ -21,7 +21,7 @@ EOF
 gs -q -dPDFA=2 -dBATCH -dNOPAUSE -dNOSAFER --permit-file-read="$icc" -dPDFACompatibilityPolicy=1 \
    -sColorConversionStrategy=RGB -sProcessColorModel=DeviceRGB -sOutputICCProfile="$icc" \
    -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dDownsampleColorImages=false \
-   -sDEVICE=pdfwrite -sOutputFile="$out" "$def" "$in" 2>&1 | grep -ivE 'overprint|annotation' || true
+   -sDEVICE=pdfwrite -sOutputFile="$out" "$def" "$in" 2>&1 | grep -ivE 'overprint|annotation|^$' || true
 rm -f "$def"
 before=$(pdfinfo -url "$in" | tail -n +2 | wc -l); after=$(pdfinfo -url "$out" | tail -n +2 | wc -l)
 echo "links: $after of $before kept"

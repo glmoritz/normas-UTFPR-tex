@@ -82,6 +82,7 @@ def layout(pdf, first, last):
         r'<fontspec id="(\d+)" size="(-?\d+)" family="([^"]+)"', xml)}
     body, pageno, caption, left, right = (collections.Counter() for _ in range(5))
     sources = []
+    source_align = collections.Counter()
     pages = re.findall(r'<page [^>]*height="(\d+)" width="(\d+)"[^>]*>(.*?)</page>', xml, flags=re.S)
     for h, w, content in pages:
         h, w = int(h), int(w)
@@ -98,6 +99,8 @@ def layout(pdf, first, last):
                 caption[family] += 1
             elif re.match(r"(Fonte|Source)\s*:", text):
                 sources.append(text[:70])
+                mid = (w * 3 / 21 + w * 19 / 21) / 2
+                source_align["centered" if abs(lft + wid / 2 - mid) < 7 * w / 595 else "left" if lft * cm_x < 3.3 else "other"] += 1
             else:
                 body[family] += len(text)
                 if len(text) > 70:
@@ -111,6 +114,7 @@ def layout(pdf, first, last):
         "caption_fonts": caption.most_common(3),
         "captions_in_text": sum(caption.values()),
         "source_lines": len(sources),
+        "source_alignment": dict(source_align),
         "source_forms": collections.Counter(
             re.sub(r"\d{4}", "AAAA", s)[:34] for s in sources).most_common(6),
         "left_margin_cm": left.most_common(3),

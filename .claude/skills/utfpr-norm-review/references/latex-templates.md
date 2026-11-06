@@ -42,8 +42,10 @@ is measurably wrong, and fix the cause first.
 | `\setcounter{page}{N}` before the lists | Breaks the page count (PAG-01, PAG-02) | Delete it and compile |
 | `\includepdf` for annexes | Pages have no number (PAG-03) | Add `pagecommand={\thispagestyle{plainheader}}` |
 | `abnt-etal-cite=2` | Same as the template and P2, so advice only. `3` follows the norm | Change only if asked |
-| `\fonte{...}` | Macro exists, but may never be used | Add after each caption, inside the float |
-| `\licencaCCBYNCND{X}` | Needs the icons in `Imagens/` | Choose the license; add the icons |
+| `\fonte{...}` | May never be used, and it is `flushleft` in older copies | Add it to each float. Use `center` in `\fonte` and `\@makecaption`, as in the current template. After a `tabular`, add `\vspace{8pt}` first, or the source collides with the bottom rule |
+| `\capa`, `\folhaderosto` | Older copies lack bold and have only one license | Port the whole block from the template, keeping `.pdf` icons under pdflatex |
+| License block | Two minipages at 0.25 and 0.75 stack if a line break separates them | Add `%` right after the first `\end{minipage}` |
+| Advisors on the rosto | Accepted work writes "Prof. Dr." | `\orientador{Prof. Dr. Nome}` |
 | `\includepdf` for the sheet | Often commented out | Uncomment once the student has the PDF |
 | `pdfx` | Too slow on Overleaf | Leave it off. Add `pdfa` to the hyperref options, then run `scripts/make_pdfa.sh`, which also validates with veraPDF |
 | License other than NC-ND | Older class has only `\licencaCCBYNCND` | Copy the block from the template and use icons converted to PDF with `epstopdf` |

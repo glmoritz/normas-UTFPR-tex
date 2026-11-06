@@ -23,6 +23,9 @@ rule, update `rules.md` too, and keep the entry so the reason stays visible.
 
 ## Evidence
 
+- Measure alignment of captions and sources against accepted works. A review once ranked the norm's text above the centered source that every accepted work used; the advisor caught it.
+- Check what a dataset citation really describes against the scripts: resolution, year and identifiers can show it is the wrong one.
+
 - Do not raise a tier from one accepted document. A draft did, and a later PPGSE work passed with
   uppercase citations and et al. for three authors.
 - Compare figures with any related paper by the student. Only a person can decide how to credit them.
