@@ -1,0 +1,143 @@
+{
+  "IN31": {
+    "label": "IN PROPPG/UTFPR nº 31/2023",
+    "url": "https://sei.utfpr.edu.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=4002089&id_orgao_publicacao=0",
+    "acesso": "aberto",
+    "lido": "integral"
+  },
+  "PROC": {
+    "label": "Biblioteca UTFPR, Procedimentos: Mestrado e Doutorado",
+    "url": "https://www.utfpr.edu.br/bibliotecas/trabalhos-academicos/orientacoes-para-entrega/procedimento-de-entrega-mestrado-e-doutorado",
+    "acesso": "aberto",
+    "lido": "integral"
+  },
+  "ENT": {
+    "label": "Biblioteca UTFPR, Orientações para entrega",
+    "url": "https://www.utfpr.edu.br/bibliotecas/trabalhos-academicos/orientacoes-para-entrega",
+    "acesso": "aberto",
+    "lido": "integral"
+  },
+  "COUNI78": {
+    "label": "Resolução COUNI/UTFPR nº 78/2022 (Regulamento Stricto Sensu)",
+    "url": "https://sei.utfpr.edu.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=3095524&id_orgao_publicacao=0",
+    "acesso": "aberto",
+    "lido": "trechos sobre versão final"
+  },
+  "PPGSE": {
+    "label": "Resolução COPPG/UTFPR nº 202/2024 (Regulamento PPGSE)",
+    "url": "https://sei.utfpr.edu.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=5022599&id_orgao_publicacao=0",
+    "acesso": "aberto",
+    "lido": "trechos sobre versão final"
+  },
+  "PPGSE10": {
+    "label": "Resolução PPGSE nº 10/2024 (dissertação em formato de artigo)",
+    "url": "https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgse-ct/documentos/regulamentos-e-normas/resolucao-10-2024",
+    "acesso": "aberto",
+    "lido": "início"
+  },
+  "LIC": {
+    "label": "Resolução Conjunta COPPG/COGEP nº 01/2021 (licenciamento)",
+    "url": "https://sei.utfpr.edu.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=2615190&id_orgao_publicacao=0",
+    "acesso": "aberto",
+    "lido": "não lido"
+  },
+  "LABIC": {
+    "label": "IN DIRPPG-UTFPR-CT nº 1/2025 (LABIC)",
+    "url": "https://labic.utfpr.edu.br/regulamento/instrucao-normativa-01-2025.html",
+    "acesso": "aberto",
+    "lido": "trechos sobre agradecimentos"
+  },
+  "MAN": {
+    "label": "Manual UTFPR 2021",
+    "url": "https://repositorio.utfpr.edu.br/jspui/bitstream/1/25577/6/elaboracaotrabalhosacademicosutfpr.pdf",
+    "acesso": "aberto",
+    "lido": "integral",
+    "paginado": true
+  },
+  "NBR14724": {
+    "label": "ABNT NBR 14724:2024",
+    "url": "https://webapp.utfpr.edu.br/bibservices/gedWeb",
+    "acesso": "GEDWeb (login)",
+    "lido": "integral, 1ª impressão; sem a versão corrigida de 01.04.2025"
+  },
+  "NBR10520": {
+    "label": "ABNT NBR 10520:2023",
+    "url": "https://webapp.utfpr.edu.br/bibservices/gedWeb",
+    "acesso": "GEDWeb (login)",
+    "lido": "integral, até a seção 8"
+  },
+  "NBR6028": {
+    "label": "ABNT NBR 6028:2021",
+    "url": "https://webapp.utfpr.edu.br/bibservices/gedWeb",
+    "acesso": "GEDWeb (login)",
+    "lido": "integral"
+  },
+  "NBR6023": {
+    "label": "ABNT NBR 6023:2018",
+    "url": "https://webapp.utfpr.edu.br/bibservices/gedWeb",
+    "acesso": "GEDWeb (login)",
+    "lido": "seções 4 a 6, 8 e 9 integrais e modelos usuais da seção 7; 2ª edição de 14.11.2018, sem verificar versão corrigida posterior"
+  },
+  "NBR6024": {
+    "label": "ABNT NBR 6024:2012 (via Manual UTFPR)",
+    "url": "https://repositorio.utfpr.edu.br/jspui/bitstream/1/25577/6/elaboracaotrabalhosacademicosutfpr.pdf",
+    "acesso": "norma no GEDWeb",
+    "lido": "indireto, pelo manual",
+    "paginado": true
+  },
+  "NBR6027": {
+    "label": "ABNT NBR 6027:2012 (via Manual UTFPR)",
+    "url": "https://repositorio.utfpr.edu.br/jspui/bitstream/1/25577/6/elaboracaotrabalhosacademicosutfpr.pdf",
+    "acesso": "norma no GEDWeb",
+    "lido": "indireto, pelo manual",
+    "paginado": true
+  },
+  "ACEITO": {
+    "label": "Dissertação aceita pela biblioteca (CPGEI, 2025)",
+    "url": "https://repositorio.utfpr.edu.br/jspui/handle/1/36171",
+    "acesso": "aberto",
+    "lido": "medições do PDF depositado"
+  },
+  "ACEITO2": {
+    "label": "Dissertação aceita pela biblioteca (PPGSE, 2026)",
+    "url": "https://repositorio.utfpr.edu.br/jspui/handle/1/40437",
+    "acesso": "aberto",
+    "lido": "medições do PDF depositado"
+  },
+  "MODELO": {
+    "label": "Modelo LaTeX PPGSE, indicado pelo programa (ramo ppgse-cc)",
+    "url": "https://github.com/gbrante/normas-UTFPR-tex/tree/ppgse-cc",
+    "acesso": "aberto",
+    "lido": "modelo.tex, classe e modelo.pdf"
+  },
+  "ORIENT": {
+    "label": "Relato de orientadores sobre devoluções da biblioteca",
+    "url": "https://www.utfpr.edu.br/bibliotecas/trabalhos-academicos/orientacoes-para-entrega/procedimento-de-entrega-mestrado-e-doutorado",
+    "acesso": "relato de orientadores",
+    "lido": "relato de orientadores"
+  },
+  "PPGSEDEF": {
+    "label": "PPGSE, Procedimentos para defesa",
+    "url": "https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgse-ct/documentos/procedimentos-para-defesa",
+    "acesso": "aberto",
+    "lido": "página e documentos ligados"
+  },
+  "CHECK": {
+    "label": "Checklist do aluno para finalização do mestrado ou doutorado (DIRPPG-CT)",
+    "url": "https://www.utfpr.edu.br/documentos/pesquisa-e-pos-graduacao/dirppg-ct/manual-secretaria-coordenacao-pos-stricto-sensu-1/modelo_checklist_defesa_aluno/@@download/file",
+    "acesso": "aberto",
+    "lido": "integral"
+  },
+  "IN0117": {
+    "label": "IN 01/2017 COPPG (coletânea de artigos)",
+    "url": "https://www.utfpr.edu.br/documentos/conselhos/coppg/resolucoes-coppg/resolucoes-2017-2/resolucao-008-17_com-in-01-2017-coppg.pdf/@@download/file",
+    "acesso": "aberto",
+    "lido": "integral"
+  },
+  "TUT": {
+    "label": "Tutorial PROPPG: defesa e versão final no Sistema Acadêmico",
+    "url": "https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgse-ct/documentos/procedimentos-para-defesa/tutorial_pos_fase1-e-2.pdf/@@download/file",
+    "acesso": "aberto",
+    "lido": "trechos sobre documentos da banca"
+  }
+}
