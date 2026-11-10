@@ -580,7 +580,7 @@
 	\begin{espacosimples}%
 		\setlength\parindent{0pt}
 		\setlength\parskip{12pt}
-		\UTFPRcitadata. {\bf \ABNTtitulodata}. \ABNTdatadata. \pageref{LastPage} f. \UTFPRdocumentodata\ (\UTFPRniveldata\ em \UTFPRcursodata) -- \ABNTinstituicaodata, \ABNTlocaldata, \ABNTdatadata.\par
+		% Sem a referência do trabalho: Manual UTFPR 2021, p. 29; a biblioteca devolve trabalhos com ela
 }%
 {
 		\par Palavras-chave: \UTFPRpalavraschavedata \par
@@ -601,7 +601,7 @@
 	\begin{espacosimples}%
 		\setlength\parindent{0pt}
 		\setlength\parskip{12pt}
-		\UTFPRcitadata. {\bf \UTFPRtitledata}. \ABNTdatadata. \pageref{LastPage} f. \UTFPRdocumentodata\ (\UTFPRniveldata\ em \UTFPRcursodata) -- \ABNTinstituicaodata, \ABNTlocaldata, \ABNTdatadata. Título original: \ABNTtitulodata\par
+		% Sem a referência do trabalho: Manual UTFPR 2021, p. 29; a biblioteca devolve trabalhos com ela
 }%
 {
 		\par Keywords: \UTFPRkeywordsdata
