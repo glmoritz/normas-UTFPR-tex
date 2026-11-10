@@ -39,3 +39,16 @@ rule, update `rules.md` too, and keep the entry so the reason stays visible.
 - Ghostscript can claim PDF/A and still fail veraPDF without a real OutputIntent, and it drops links
   unless hyperref has the `pdfa` option. `scripts/make_pdfa.sh` holds the working recipe.
 - A date of access is honest only if the link was opened. Crossref gives event city, pages and DOI.
+
+## Library returns
+
+- 2026-11: a PPGSE dissertation came back with "RESUMO e ABSTRACT: remover as referências". It meant
+  the work's own reference that the class prints above the text, not citations. The skill had the
+  opposite rule (PAG-06 checked that reference's sheet count) because the template prints it and an
+  accepted 2026 work passed with it. The manual (p. 29) already said not to include it, but only as
+  "sugere-se", and precedent outranked the manual. Now RES-06 is a blocker, library returns rank
+  first, and both check scripts flag it. The page count did not change after removing it.
+- A manual read in full was still not mapped item by item to rules. A page-by-page pass found more
+  gaps, now EST-04 to EST-07, LST-01, LST-02, FMT-12, REF-18 and RES-07. The same work had a
+  section heading followed directly by a subsection (EST-06), which the library did not flag.
+

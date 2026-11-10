@@ -70,7 +70,7 @@
     "label": "ABNT NBR 6028:2021",
     "url": "https://webapp.utfpr.edu.br/bibservices/gedWeb",
     "acesso": "GEDWeb (login)",
-    "lido": "integral"
+    "lido": "integral; seção exata da exceção do resumo no próprio documento não reconferida em 10/11/2026"
   },
   "NBR6023": {
     "label": "ABNT NBR 6023:2018",
@@ -139,5 +139,11 @@
     "url": "https://www.utfpr.edu.br/cursos/programas-de-pos-graduacao/ppgse-ct/documentos/procedimentos-para-defesa/tutorial_pos_fase1-e-2.pdf/@@download/file",
     "acesso": "aberto",
     "lido": "trechos sobre documentos da banca"
+  },
+  "DEVOL1": {
+    "label": "Devolução da biblioteca: dissertação PPGSE devolvida em 10/11/2026 (RESUMO e ABSTRACT: remover as referências)",
+    "url": "https://www.utfpr.edu.br/bibliotecas/trabalhos-academicos/orientacoes-para-entrega/procedimento-de-entrega-mestrado-e-doutorado",
+    "acesso": "e-mail da biblioteca ao orientador",
+    "lido": "integral"
   }
 }

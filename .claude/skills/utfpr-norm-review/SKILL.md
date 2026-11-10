@@ -80,7 +80,8 @@ and the license block show at a glance, and no script measures them.
 
 `rules.md` gives each rule a default tier. Adjust from evidence, in this order of authority:
 
-1. UTFPR regulations and library procedures (IN 31, COUNI 78, program rules)
+1. What the library returned works for (`DEVOL` sources), plus UTFPR regulations and library
+   procedures (IN 31, COUNI 78, program rules)
 2. What accepted documents and the PPGSE template actually do
 3. Current ABNT editions
 4. UTFPR manual, for what the others leave open
@@ -90,6 +91,10 @@ and the license block show at a glance, and no script measures them.
 - **Corrigir:** required by a current rule; accepted documents follow it or do not test it.
 - **Recomendação:** in a norm or the manual, but an accepted document passed without it, or
   it is only a recommendation.
+
+A library return outranks any precedent: practice changes, and an older accepted file only shows
+what passed then. When the manual says "sugere-se" about something the library can see on the
+page, do not drop it to advice just because a precedent passed; the library may enforce it.
 
 The advisor's position is to follow what is used, so a tolerated deviation drops to
 Recomendação. It stays in the report, because the precedents are few. Raise a tier only with
@@ -171,6 +176,9 @@ When others will read the report, publish it with the Artifact tool and give the
 
 Warn about any deadline first. Then tell the user the status in a few lines and point to the report: blockers open, what changed,
 and what is needed from whom.
+
+When the library returns a work, add its message as a `DEVOL` source, fix the rule it touches,
+and check whether the same text of the manual hides other rules the catalog lacks.
 
 Then improve the skill. Add what this review taught to `lessons.md`, correct `rules.md` if a rule
 was wrong, and add confirmed deposits to `precedents.md`. When the advisor or the library reports

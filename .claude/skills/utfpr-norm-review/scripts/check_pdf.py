@@ -68,11 +68,19 @@ def abstract_words(pdf, pages):
         for label, name in (("RESUMO", "resumo"), ("ABSTRACT", "abstract")):
             if re.match(rf"\s*{label}\s*\n", body) and name not in out:
                 head = re.split(r"(?:Palavras-chave|Keywords)\s*:", body)[0]
+                flat = re.sub(r"\s+", " ", head)
+                # RES-06: the work's own reference (AUTHOR, Name. Title. 2026. 80 f. Dissertação ...)
+                ref = re.search(r"\b\d{4}\.\s*\d{1,4}\s*f\.\s*(?:Disserta|Tese|Thesis|Trabalho|Monografia)", flat)
                 out[name] = {
                     "page": page,
                     "words": len(head.split()) - 1,
                     "paragraphs": len([p for p in re.split(r"\n\s*\n", head) if p.strip()]) - 1,
+                    "work_reference_present": bool(ref),
+                    "citations": re.findall(r"\([A-ZÀ-Ý][^()]{1,60}?,\s*\d{4}[a-z]?(?:,\s*p\.[^)]*)?\)|\[\d+(?:[,–-]\s*\d+)*\]", flat)[:5],
                 }
+                if ref:
+                    out[name]["problem"] = ("Reference of the work above the text: UTFPR library returns this "
+                                            "(RES-06). Remove it from the template's resumo/abstract environment.")
     return out
 
 
@@ -146,11 +154,7 @@ def pagination(pdf, pages, text):
         key = re.sub(r"^\d(\.\d+)*\s+", "", title)[:14].lower()
         if not 1 <= page <= pages or key not in re.sub(r"\s+", " ", sheets[page - 1]).lower():
             wrong.append([title[:50], number])
-    stated = re.search(r"\b(\d{2,4})\s+f\.", " ".join(sheets[:8]))
-    stated = int(stated.group(1)) if stated else None
     return {
-        "stated_sheets_in_abstract_reference": stated,
-        "stated_sheets_ok": None if stated is None else stated == pages - 1,
         "pdf_pages": pages,
         "first_numbered_pdf_page": first,
         "first_printed_number": printed[first - 1],

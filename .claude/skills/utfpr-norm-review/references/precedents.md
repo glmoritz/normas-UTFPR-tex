@@ -65,6 +65,8 @@ Tolerated, so treat as advice:
 - 104 uppercase citations, 0 mixed case
 - *et al.* for three authors (5 references)
 - Keywords separated by periods, in title case
+- The work's reference above the resumo and abstract (`143 f.`). No longer tolerated: the library
+  returned a PPGSE dissertation for it in Nov 2026. See RES-06
 - "Fonte: Autoria própria." with no year; 2 variants in capitalization
 - 36 bullets, "capítulo" in the text
 - No ficha catalográfica

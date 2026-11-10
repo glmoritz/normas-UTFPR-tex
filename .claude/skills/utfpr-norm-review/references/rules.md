@@ -81,12 +81,20 @@ Local policy: if `references/local.md` exists, apply what it says, such as an ad
 |---|---|---|---|---|
 | EST-01 | B | Required elements present: cover, rosto, approval, resumo, abstract, sumário, introduction, development, conclusion, references | NBR14724 §4; MAN p. 12 | aluno |
 | EST-02 | C | Pre-textual order follows the scheme. Pre-textual elements stay out of the sumário; post-textual ones appear in it | NBR14724 §4.2.1; NBR6027 p. 34 | auto |
+| EST-04 | C | An epígrafe is a citation: its author goes in the reference list | MAN p. 20 | aluno |
+| EST-05 | C | Apêndice and anexo each open with an indicator page holding only `APÊNDICE A – Título` (or `ANEXO A – ...`), centered; the document starts on the next page. Apêndice is the author's own material, anexo is someone else's | NBR14724 §4.2.3; MAN p. 23-24 | auto |
+| EST-06 | C | Every section has text of its own: no heading followed directly by a subheading (e.g. `1.2 OBJETIVOS` then `1.2.1`) | NBR6024 (via MAN p. 27) | aluno |
+| EST-07 | A | Section numbers in arabic digits, one space before the title, left-aligned, at most five levels (three recommended); text starts on the next line | NBR6024 (via MAN p. 27) | auto |
+| LST-01 | C | Lista de siglas in alphabetical order, each followed by its meaning | NBR14724 §4.2.1.11; MAN p. 21 | auto |
+| LST-02 | A | Separate lists by illustration type (figuras, quadros, gráficos) when a type has more than three items | MAN p. 21 | auto |
 | EST-03 | A | The norm says sections, not "capítulos". Both accepted files use the word | NBR14724 §4.2.2; ACEITO; ACEITO2 | auto, if asked |
 | RES-01 | C | One paragraph, informative, 150 to 500 words, third person advised | NBR6028 §4.1.2-4.1.4, §4.1.8; MAN p. 29 | aluno |
 | RES-02 | A | Keywords right below the abstract, separated by `;`, ending with `.` The current template does this. P1 did; P2 used periods and passed | NBR6028 §4.1.7; MAN p. 29; MODELO; ACEITO2 | auto |
 | RES-03 | A | Keywords start lowercase except proper names. Accepted file capitalized them | NBR6028 §4.1.7; ACEITO | auto |
 | RES-04 | A | Avoid uncommon abbreviations, symbols, formulas. Manual is stricter (none); accepted file uses IoT | NBR6028 §3.3; MAN p. 29; ACEITO | aluno |
 | RES-05 | C | Abstract matches the resumo in content | NBR14724 §4.2.1.8 | aluno |
+| RES-06 | B | No reference of the work (`AUTOR. Título. 2026. 80 f. Dissertação ...`) above the resumo or the abstract, and no citations in them. The manual only "suggests" it and P2 passed with it, but the library returned a PPGSE dissertation for it in Nov 2026. `normas-utf-tex` prints it from the class, including the current `ppgse-cc` branch | MAN p. 29; NBR6028; DEVOL1 | auto |
+| RES-07 | A | Keywords taken from a controlled vocabulary, such as the Biblioteca Nacional authority catalog (termo tópico), with the matching English term in Keywords | MAN p. 32 | aluno |
 
 ## Layout
 
@@ -101,6 +109,7 @@ Local policy: if `references/local.md` exists, apply what it says, such as an ad
 | FMT-08 | C | Acronym: full name first, acronym in parentheses, on first mention | NBR14724 §5.6 | auto |
 | FMT-09 | A | Alíneas `a)` rather than bullets. Both accepted files used bullets | NBR6024 p. 27; ACEITO; ACEITO2 | auto |
 | FMT-10 | A | Display equations numbered in parentheses at right when referenced | NBR14724 §5.7 | manual |
+| FMT-12 | A | No extra space before or after paragraphs | MAN p. 8 | auto |
 | FMT-11 | C | Footnotes inside margins, 5 cm rule, smaller type | NBR14724 §5.2.1 | auto |
 
 ## Pagination
@@ -114,7 +123,6 @@ and again after the approval sheet goes in, because it shifts every later page.
 | PAG-02 | B | No hard-coded counter (`\\setcounter{page}{N}`) in the source; it breaks the count whenever a page is added | MAN p. 28; ORIENT | auto |
 | PAG-03 | B | Numbers appear from the first textual page to the last page, with no gaps, including appendices, annexes and pages from `\\includepdf` | NBR14724 §5.3; ORIENT | auto |
 | PAG-04 | B | Sumário numbers match the printed pages, recompiled until stable | NBR6027 p. 34; ORIENT | auto |
-| PAG-06 | B | A sheet count in the resumo reference (`143 f.`) equals PDF pages minus 1, as in P2. It updates only after recompiling, so check the final file | MAN p. 28; ACEITO2; ORIENT | auto |
 | PAG-05 | C | Page number at top right, 2 cm from the edges, in smaller type | NBR14724 §5.3; MAN p. 9, p. 28 | auto |
 
 ## Figures and tables
@@ -171,6 +179,7 @@ because NBR 6023 governs the reference list only. Do not confuse the two when ex
 | REF-14 | C | Months abbreviated per Anexo A, in the publication's language; page ranges as `p. 31-40` | NBR6023 §8.6.2, §8.7.2.4 | auto |
 | REF-15 | C | Software and databases: author, title, version, place, date, medium | NBR6023 §7.20 | aluno |
 | REF-16 | C | Laws and regulations: jurisdiction in capitals, type, number, date, ementa, publication data | NBR6023 §7.11.1, §7.11.5 | aluno |
+| REF-18 | A | `In:` and *et al.* in italics in the reference list. The manual asks it; check what the template's .bst does before changing | MAN p. 49 | auto, if asked |
 | REF-17 | C | No corrupted entries: duplicate punctuation, lost letters, empty `Disponível em` | NBR6023 §6.4, §6.5 | auto when the fix is unambiguous |
 
 Data comes from the document itself; anything from elsewhere goes in brackets (§4). So do not fill

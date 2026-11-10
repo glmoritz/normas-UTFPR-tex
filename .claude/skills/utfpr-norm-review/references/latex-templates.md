@@ -49,6 +49,7 @@ is measurably wrong, and fix the cause first.
 | `\includepdf` for the sheet | Often commented out | Uncomment once the student has the PDF |
 | `pdfx` | Too slow on Overleaf | Leave it off. Add `pdfa` to the hyperref options, then run `scripts/make_pdfa.sh`, which also validates with veraPDF |
 | License other than NC-ND | Older class has only `\licencaCCBYNCND` | Copy the block from the template and use icons converted to PDF with `epstopdf` |
+| `resumo` and `abstract` environments | Print the work's reference (`\UTFPRcitadata ... \pageref{LastPage} f. ...`) above the text. The library returns this (RES-06). The current `ppgse-cc` branch still has it | Delete that line in both environments of the class |
 | `\palavraschave`, `\keywords` | Older copies separate with periods; advice only, since P2 passed that way | Use `;` and end with `.` |
 
 ## utfpr.cls (DACOM, linked from the library page)

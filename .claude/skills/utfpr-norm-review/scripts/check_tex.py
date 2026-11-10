@@ -119,6 +119,10 @@ def main():
             "pdfx_active": in_live(r"\\usepackage\[[^\]]*\]\{pdfx\}"),
             "keywords_pt": (re.search(r"\\palavraschave\{([^}]*)\}", live_main) or [None, None])[1],
             "keywords_en": (re.search(r"\\keywords\{([^}]*)\}", live_main) or [None, None])[1],
+            # RES-06: classes that print the work's reference (with \pageref{LastPage} f.) in resumo/abstract
+            "abstract_reference_in_class": sorted(os.path.basename(f) for f in glob.glob(os.path.join(root, "*.cls"))
+                                                  if re.search(r"\\(?:renew|new)environment\{(?:resumo|abstract)\}(?:(?!environment\{).)*?\\pageref\{LastPage\}\s*f\.",
+                                                               strip_comments(read(f)), flags=re.S)),
             "degree_text": (re.search(r"\\comentario\{([^\n]*)\}", live_main) or [None, None])[1],
             "program": (re.search(r"\\programa\{([^}]*)\}", live_main) or [None, None])[1],
             "year": (re.search(r"\\data\{([^}]*)\}", live_main) or [None, None])[1],
